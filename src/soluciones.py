@@ -61,3 +61,13 @@ def calcular_media_satisfacción(encuestas):
         return 0
     total = sum(puntuacion for _, puntuacion, _ in encuestas)
     return total / len(encuestas)    
+
+def listar_comentarios_negativos(encuestas):
+    # Devuelve los comentarios con puntuación menor a cinco.
+    return [(cliente, comentario) for cliente, puntuacion in encuestas if puntuacion < 5]
+
+# 5: Control de pedidos de restaurante
+def agregar_pedido(pedidos, mesa, platos, total):
+    # Agrega un nuevo pedido a la lista.
+    pedidos.append({"mesa": mesa, "platos": platos, "total": total})
+    
