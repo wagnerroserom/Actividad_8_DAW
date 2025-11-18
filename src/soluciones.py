@@ -64,7 +64,7 @@ def calcular_media_satisfacción(encuestas):
 
 def listar_comentarios_negativos(encuestas):
     # Devuelve los comentarios con puntuación menor a cinco.
-    return [(cliente, comentario) for cliente, puntuacion in encuestas if puntuacion < 5]
+    return [(cliente, comentario) for cliente, puntuacion, comentario in encuestas if puntuacion < 5]
 
 # 5: Control de pedidos de restaurante
 def agregar_pedido(pedidos, mesa, platos, total):
@@ -73,8 +73,8 @@ def agregar_pedido(pedidos, mesa, platos, total):
 
 def entregar_pedido(pedido, indice):
     # Elimina un pedido entregado por su indice.
-    if 0 <= indice < len(pedidos):
-        return pedidos.pop(indice)
+    if 0 <= indice < len(pedido):
+        return pedido.pop(indice)
     else:
         return "ïndice de pedido no válido"
     
