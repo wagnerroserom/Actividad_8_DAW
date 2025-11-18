@@ -44,4 +44,10 @@ def vender_producto(inventario, agotados, producto, cantidad):
         else: 
             return f"No hay sificiente stock de {producto}."
     else:
-        return f"El producto {producto} no existe en el inventario"        
+        return f"El producto {producto} no existe en el inventario" 
+
+def mostrar_inventario(inventario):
+    # Muestra el inventario actualizado.
+    return dict(inventario)
+
+       
