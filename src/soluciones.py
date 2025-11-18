@@ -77,3 +77,7 @@ def entregar_pedido(pedido, indice):
         return pedidos.pop(indice)
     else:
         return "ïndice de pedido no válido"
+    
+def mostrar_pedidos_pedientes(pedidos):
+    # Muestra todos los pedidos aún pendientes.
+    return pedidos.copy()
