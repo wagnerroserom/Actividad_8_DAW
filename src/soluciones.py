@@ -70,4 +70,10 @@ def listar_comentarios_negativos(encuestas):
 def agregar_pedido(pedidos, mesa, platos, total):
     # Agrega un nuevo pedido a la lista.
     pedidos.append({"mesa": mesa, "platos": platos, "total": total})
-    
+
+def entregar_pedido(pedido, indice):
+    # Elimina un pedido entregado por su indice.
+    if 0 <= indice < len(pedidos):
+        return pedidos.pop(indice)
+    else:
+        return "ïndice de pedido no válido"
