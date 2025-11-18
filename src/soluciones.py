@@ -12,5 +12,8 @@ def atender_paciente(pacientes):
     if pacientes:
         return pacientes.pop(0)
     else:
-        return "Noo hay pacientes en espera."
-    
+        return "No hay pacientes en espera."
+
+def mostrar_pacientes(pacientes):
+    # Devuelve una lista de pacientes en espera
+    return pacientes.copy()
