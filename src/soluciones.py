@@ -28,4 +28,8 @@ def resgistrar_asistentes(asistentes, registros, nombre):
     else:
         return f"{nombre} ya está registrado"
     
-    
+def verificar_asistencia(asistentes, nombre):
+    # Verifica si una persona ya asistió
+    return  nombre in asistentes
+
+ 
