@@ -50,4 +50,9 @@ def mostrar_inventario(inventario):
     # Muestra el inventario actualizado.
     return dict(inventario)
 
-       
+# 4: Encuesta de satisfacción
+def agergar_respuesta(encuestas, cliente, puntuación, comentario):
+    # Agrega una respuesta a la lista de encuestas.
+    encuestas.append((cliente, puntuación, comentario))
+
+      
