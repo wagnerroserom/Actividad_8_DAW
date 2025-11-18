@@ -55,4 +55,9 @@ def agergar_respuesta(encuestas, cliente, puntuación, comentario):
     # Agrega una respuesta a la lista de encuestas.
     encuestas.append((cliente, puntuación, comentario))
 
-      
+def calcular_media_satisfacción(encuestas):
+    # Calcula la puntuación promedio de satisfacción.
+    if not encuestas:
+        return 0
+    total = sum(puntuacion for _, puntuacion, _ in encuestas)
+    return total / len(encuestas)    
