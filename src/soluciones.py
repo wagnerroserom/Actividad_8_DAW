@@ -17,3 +17,15 @@ def atender_paciente(pacientes):
 def mostrar_pacientes(pacientes):
     # Devuelve una lista de pacientes en espera
     return pacientes.copy()
+
+# 2: Control de asistencia sin duplicados
+def resgistrar_asistentes(asistentes, registros, nombre):
+    # Registra a un asistente si no ha asistido antes
+    if nombre not in asistentes:
+        asistentes.add(nombre)
+        registros[nombre] = datetime.now().strftime("%d/%m/%y, %H:%M:%S") 
+        return f"{nombre} ha sido registrado con éxito."
+    else:
+        return f"{nombre} ya está registrado"
+    
+    
