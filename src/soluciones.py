@@ -19,7 +19,7 @@ def mostrar_pacientes(pacientes):
     return pacientes.copy()
 
 # 2: Control de asistencia sin duplicados
-def resgistrar_asistentes(asistentes, registros, nombre):
+def registrar_asistente(asistentes, registros, nombre):
     # Registra a un asistente si no ha asistido antes.
     if nombre not in asistentes:
         asistentes.add(nombre)
@@ -31,6 +31,10 @@ def resgistrar_asistentes(asistentes, registros, nombre):
 def verificar_asistencia(asistentes, nombre):
     # Verifica si una persona ya asistió.
     return  nombre in asistentes
+
+def total_asistentes(asistentes):
+    # Devuelve el número total de asistentes únicos.
+    return len(asistentes)
 
 # 3: Inventario de tienda 
 def vender_producto(inventario, agotados, producto, cantidad):
