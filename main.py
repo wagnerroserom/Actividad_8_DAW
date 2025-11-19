@@ -35,5 +35,17 @@ print("Productos agotados:", agotados)
 
 print("\n" + "="*50 + "\n")
 
+# 4: Encuesta de satisfacción
+print("=== 4. Encuesta de satisfacción ===")
+encuestas = []
+agergar_respuesta(encuestas, "Cliente A", 7, "Muy buen servicio")
+agergar_respuesta(encuestas, "Cliente B", 2, "Demasiado tiempo de espera")
+agergar_respuesta(encuestas, "Cliente C", 3, "El personal se portó impaciente")
+print("Media de satisfacción:", calcular_media_satisfacción(encuestas))
+print("Comentarios negativos:", listar_comentarios_negativos(encuestas))
+
+print("\n" + "="*50 + "\n")
+
+
 
 
