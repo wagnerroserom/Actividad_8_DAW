@@ -46,6 +46,14 @@ print("Comentarios negativos:", listar_comentarios_negativos(encuestas))
 
 print("\n" + "="*50 + "\n")
 
-
+# 5: Control de pedidos de restaurante
+print("=== 5. Control de pedidos de restaurantes ===")
+pedidos = []
+agregar_pedido(pedidos, 3, ["Bolón de plátano", "Nestea"], 12.50)
+agregar_pedido(pedidos, 5, ["Empanadas", "Café"], 8.75)
+print("Pedidos pendientes:", mostrar_pedidos_pendientes(pedidos))
+entregado = entregar_pedido(pedidos, 0)
+print("Pedido entregado:", entregado)
+print("Pedidos restantes:", mostrar_pedidos_pendientes(pedidos))
 
 
