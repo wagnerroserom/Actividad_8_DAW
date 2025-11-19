@@ -23,3 +23,17 @@ print("¿Lucía asistió?", verificar_asistencia(asistentes, "Lucía Fernandez")
 print("Total de asistentes únicos:", total_asistentes(asistentes))
 
 print("\n" + "="*50 + "\n")
+
+# 3: Inventario de tienda
+print("=== 3. Inventario de tienda ===")
+inventario = {"manzanas": 10, "plátanos": 5, "leche": 0}
+agotados = set(producto for producto, cantidad in inventario.items() if cantidad == 0)
+print("Inventario inicial:", mostrar_inventario(inventario))
+print(vender_producto(inventario, agotados, "manzanas", 3))
+print(vender_producto(inventario, agotados, "leche", 1)) # Producto agotado
+print("Productos agotados:", agotados)
+
+print("\n" + "="*50 + "\n")
+
+
+
